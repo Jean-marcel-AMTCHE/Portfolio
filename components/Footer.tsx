@@ -1,10 +1,13 @@
-function Footer() {
-    return (
-      <footer>
-        <p>© {new Date().getFullYear()} Jean-Marcel Amoutche</p>
-      </footer>
-    );
-  }
+import styles from './Footer.module.css';
 
-  export default Footer;
-  
+function Footer() {
+  return (
+    <footer className={styles.footer}>
+      <p>© {new Date().getFullYear()} Jean-Marcel Amoutche</p>
+    </footer>
+  );
+}
+
+export default Footer;
+
+

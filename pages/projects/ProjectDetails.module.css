@@ -1,0 +1,160 @@
+/* Conteneur principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Lien de retour */
+  .backLink {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .backLink:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Titre du projet */
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Image du projet */
+  .image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Description */
+  .description {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  /* Section technologies */
+  .techSection {
+    margin-bottom: 1.5rem;
+  }
+  
+  .techTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .techList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .techList li {
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+  
+  /* Lien GitHub */
+  .githubLink {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .githubLink:hover {
+    color: #ff7300;
+    text-decoration: underline;
+  }
+  
+  /* Section des défis */
+  .challengeSection {
+    margin-top: 2rem;
+  }
+  
+  .challengeTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .challengeText {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Contenu Markdown */
+  .markdownContent {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+  }
+  
+  .markdownContent h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    color: #007bff;
+  }
+  
+  .markdownContent p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .image {
+      height: 250px;
+    }
+  
+    .description {
+      font-size: 1.1rem;
+    }
+  
+    .techList li {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .markdownContent {
+      font-size: 1rem;
+    }
+  }
+  
+  

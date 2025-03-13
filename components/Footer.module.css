@@ -1,0 +1,60 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #007bff, #ff7300); /* Dégradé bleu et orange */
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Effet de survol */
+.footer:hover {
+  background: linear-gradient(90deg, #0056b3, #cc5200);
+  transform: translateY(-3px);
+}
+
+/* Liens du footer */
+.footerLink {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0 1rem;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Effet de soulignement fluide */
+.footerLink::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footerLink:hover::before {
+  transform: scaleX(1);
+}
+
+/* Icônes du footer */
+.footerIcon {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.footerIcon:hover {
+  transform: scale(1.2);
+  color: #ffd700; /* Jaune doré */
+}
+

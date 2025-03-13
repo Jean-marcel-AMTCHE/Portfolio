@@ -1,0 +1,125 @@
+/* Conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* En-tête de la section */
+  .title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #007bff, #ff7300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+  }
+  
+  /* Grille de projets */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  
+  /* Carte projet */
+  .projectCard {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .projectCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image du projet */
+  .projectCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    border-bottom: 3px solid #007bff;
+  }
+  
+  .projectCard:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+  
+  /* Contenu du projet */
+  .projectContent {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .projectContent h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  .projectContent p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Bouton "Voir plus" */
+  .projectButton {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: linear-gradient(90deg, #007bff, #ff7300);
+    color: white;
+    border-radius: 50px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .projectButton:hover {
+    background: linear-gradient(90deg, #ff7300, #007bff);
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .projectButton:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.2rem;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .projectCard {
+      width: 100%;
+    }
+  }
+  
+  

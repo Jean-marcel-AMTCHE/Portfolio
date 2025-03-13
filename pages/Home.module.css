@@ -1,0 +1,94 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white; /* Dégradé bleu-orange */
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+/* Section principale */
+.main {
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Titres stylisés */
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #007bff, #ff7300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Description stylisée */
+.description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(31, 36, 123, 0.8);
+  margin-bottom: 2rem;
+}
+
+/* Section des boutons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Boutons stylisés */
+.button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(90deg, #ff7300, #007bff);
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Effet de surbrillance au hover */
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease-in-out;
+}
+
+.button:hover::before {
+  left: 0;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #007bff, #ff7300);
+}
+
+/* Effet de clic */
+.button:active {
+  transform: scale(0.95);
+}
+

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import styles from './ProjectCard.module.css'; // Importez le fichier CSS Module
+import styles from './ProjectCard.module.css'; 
 
 interface Project {
   slug: string;
@@ -12,8 +12,8 @@ interface Project {
 function ProjectCard({ project }: { project: Project }) {
   return (
     <motion.div
-      className={styles.projectCard} // Utilisez les classes CSS
-      whileHover={{ scale: 1.05 }} // Animation au survol
+      className={styles.projectCard} 
+      whileHover={{ scale: 1.05 }} 
       transition={{ duration: 0.2 }}
     >
       <img src={project.image} alt={project.title} className={styles.projectImage} />
@@ -29,4 +29,5 @@ function ProjectCard({ project }: { project: Project }) {
 }
 
 export default ProjectCard;
+
 
